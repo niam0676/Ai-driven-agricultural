@@ -3,14 +3,18 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 import requests
 import os
+from dotenv import load_dotenv
 from typing import Optional, Dict, Any
+
+# Load environment variables from .env file
+load_dotenv()
 
 class AgriAssistant:
     def __init__(self):
         """Initialize with all APIs and models"""
         self.crop_model = None
-        self.weather_api_key = "675abf37acd0a1bc853a70161c9953c9"
-        self.crop_data_path = r"C:\Users\Admin\OneDrive\Desktop\AI_Precision_Agriculture_System\agri_assistant\data\crop_recommendation_fixed.csv"
+        self.weather_api_key = os.getenv("WEATHER_API_KEY")
+        self.crop_data_path = os.getenv("CROP_DATA_PATH")
         self._initialize_models()
 
     def _initialize_models(self):
@@ -18,8 +22,8 @@ class AgriAssistant:
         try:
             if os.path.exists(self.crop_data_path):
                 crop_data = pd.read_csv(self.crop_data_path)
-                required_cols = ['nitrogen', 'phosphorus', 'potassium', 'temperature', 
-                               'humidity', 'ph', 'rainfall', 'crop']
+                required_cols = ['nitrogen', 'phosphorus', 'potassium', 'temperature',
+                                 'humidity', 'ph', 'rainfall', 'crop']
                 
                 if all(col in crop_data.columns for col in required_cols):
                     X = crop_data[required_cols[:-1]]
@@ -28,13 +32,13 @@ class AgriAssistant:
                     
                     self.crop_model = RandomForestClassifier(n_estimators=100, random_state=42)
                     self.crop_model.fit(X_train, y_train)
-                    print("Crop recommendation model loaded successfully")
+                    print("✅ Crop recommendation model loaded successfully")
                 else:
                     raise ValueError("Crop data CSV is missing required columns")
             else:
                 raise FileNotFoundError(f"Crop data file not found at {self.crop_data_path}")
         except Exception as e:
-            print(f"Error initializing crop model: {str(e)}")
+            print(f"❌ Error initializing crop model: {str(e)}")
             self.crop_model = None
 
     def get_crop_recommendation(self, params: Dict[str, float]) -> Dict[str, Any]:
@@ -42,11 +46,10 @@ class AgriAssistant:
         if self.crop_model is None:
             return {"error": "Crop recommendation service is currently unavailable"}
         
-        required_params = ['nitrogen', 'phosphorus', 'potassium', 
-                         'temperature', 'humidity', 'ph', 'rainfall']
+        required_params = ['nitrogen', 'phosphorus', 'potassium',
+                           'temperature', 'humidity', 'ph', 'rainfall']
         
         try:
-            # Validate input parameters
             if not all(p in params for p in required_params):
                 missing = [p for p in required_params if p not in params]
                 return {"error": f"Missing parameters: {', '.join(missing)}"}
@@ -115,7 +118,6 @@ class AgriAssistant:
                 ]
             }
 
-# CLI Interface remains unchanged for backward compatibility
 if __name__ == "__main__":
     assistant = AgriAssistant()
     print("Agriculture Assistant (type 'quit' to exit)\n")
