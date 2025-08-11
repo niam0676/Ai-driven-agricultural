@@ -1,0 +1,72 @@
+Nitrogen,Phosphorus,Potassium,pH,Moisture,Soil_Type,Crop_Type,Fertilizer_Name
+85,42,45,6.4,27,Sandy,Wheat,Urea
+92,38,48,6.3,29,Sandy,Wheat,Urea
+88,45,42,6.5,26,Sandy,Wheat,Urea
+118,52,53,5.7,34,Loamy,Rice,DAP
+122,48,55,5.9,36,Loamy,Rice,DAP
+125,55,50,5.8,37,Loamy,Rice,DAP
+62,32,42,6.9,29,Clay,Maize,Ammonium Sulphate
+58,28,38,7.0,31,Clay,Maize,Ammonium Sulphate
+112,58,48,6.1,39,Black,Cotton,SSP
+108,52,45,6.2,41,Black,Cotton,SSP
+82,38,52,6.8,27,Red,Soybean,MOP
+78,32,48,7.1,29,Red,Soybean,MOP
+95,40,44,6.2,28,Loamy,Wheat,Urea
+105,45,50,6.0,32,Loamy,Wheat,NPK
+68,35,40,6.7,30,Clay,Wheat,Ammonium Nitrate
+115,50,52,5.9,35,Sandy,Rice,DAP
+128,55,58,5.7,38,Black,Rice,NPK
+72,30,42,6.8,31,Red,Maize,Ammonium Sulphate
+65,28,35,7.0,29,Loamy,Maize,DAP
+110,60,45,6.3,40,Sandy,Cotton,SSP
+102,48,50,6.4,37,Clay,Cotton,MOP
+88,42,48,6.5,33,Black,Soybean,NPK
+75,35,45,6.9,30,Red,Soybean,SSP
+90,38,42,6.3,28,Loamy,Barley,Urea
+82,35,40,6.5,29,Sandy,Barley,Ammonium Nitrate
+120,55,50,5.8,36,Black,Sugarcane,DAP
+115,52,48,6.0,38,Loamy,Sugarcane,NPK
+70,32,38,6.7,30,Clay,Potato,Ammonium Sulphate
+65,30,35,6.9,31,Red,Potato,MOP
+105,50,45,6.2,35,Sandy,Sunflower,SSP
+98,45,48,6.3,33,Loamy,Sunflower,NPK
+55,25,30,7.2,27,Clay,Tea,Ammonium Sulphate
+50,22,28,7.3,26,Black,Tea,MOP
+130,60,55,5.6,40,Loamy,Paddy,DAP
+125,58,52,5.7,39,Black,Paddy,NPK
+80,38,42,6.6,32,Sandy,Groundnut,SSP
+75,35,40,6.7,31,Red,Groundnut,MOP
+92,42,45,6.4,33,Loamy,Mustard,Urea
+85,40,42,6.5,30,Clay,Mustard,Ammonium Nitrate
+110,48,50,6.1,37,Sandy,Chillies,SSP
+105,45,48,6.2,35,Black,Chillies,NPK
+60,28,35,7.0,29,Red,Tobacco,Ammonium Sulphate
+58,25,32,7.1,28,Loamy,Tobacco,MOP
+95,40,45,6.3,34,Sandy,Bajra,Urea
+88,38,42,6.4,32,Black,Bajra,NPK
+72,35,38,6.8,31,Clay,Jowar,Ammonium Sulphate
+68,32,35,6.9,30,Red,Jowar,MOP
+118,55,50,5.9,36,Loamy,Turmeric,DAP
+112,52,48,6.0,38,Black,Turmeric,NPK
+82,38,42,6.6,33,Sandy,Ginger,SSP
+78,35,40,6.7,32,Red,Ginger,MOP
+65,30,35,7.0,30,Clay,Coffee,Ammonium Sulphate
+60,28,32,7.1,29,Black,Coffee,MOP
+105,50,45,6.2,35,Loamy,Coconut,SSP
+98,45,48,6.3,34,Sandy,Coconut,NPK
+115,55,50,5.8,37,Black,Arecanut,DAP
+110,52,48,6.0,36,Loamy,Arecanut,NPK
+85,40,42,6.5,33,Sandy,Rubber,SSP
+80,38,40,6.6,32,Red,Rubber,MOP
+92,42,45,6.4,34,Loamy,Cardamom,Urea
+88,40,42,6.5,33,Black,Cardamom,NPK
+70,32,38,6.8,31,Clay,Pepper,Ammonium Sulphate
+65,30,35,6.9,30,Red,Pepper,MOP
+120,55,52,5.7,38,Loamy,Vanilla,DAP
+115,52,50,5.8,37,Black,Vanilla,NPK
+78,35,42,6.7,32,Sandy,Cashew,SSP
+75,32,40,6.8,31,Red,Cashew,MOP
+102,48,45,6.3,36,Loamy,Cocoa,SSP
+98,45,42,6.4,35,Black,Cocoa,NPK
+82,38,40,6.6,33,Sandy,Oilpalm,SSP
+78,35,38,6.7,32,Red,Oilpalm,MOP
